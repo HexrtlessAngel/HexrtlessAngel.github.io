@@ -1,0 +1,17 @@
+:root
+{
+    --title-text-color: #fff;
+    --primary-background-color: #000000d3;
+    --primary-button-color: #4987cd;
+    --hilighted-button-color: #99bcd6;
+    --text-color: #ffffff;
+    --primary-hyperlink-color: #4987cd;
+    --hilighted-hyperlink-color: #99bcd6;
+    --visited-hyperlink-color: #688272;
+    --blur-amount: 5px;
+    --logo-image-dark: 0;
+}
+
+body{
+    background-image: url("background-summer.jpg");
+}

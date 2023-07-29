@@ -1,0 +1,157 @@
+:root
+{
+    --russian-violet: #2A0C38ff;
+    --paradise-pink: rgb(255, 0, 212);
+    --dark-purple: #1D0425ff;
+    --purple-navy: #464F89ff;
+    --palatinate-purple: rgb(122, 0, 102);
+    --russian-violet-2: #312148ff;
+    --logo-image-dark: 0;
+    --text-colour: rgb(206, 206, 206);
+}
+
+body{
+    background-color: rgb(3, 3, 3);  content: " ";
+}
+
+@font-face
+{
+    font-family: VT323-Regular;
+    src: url("VT323-Regular.ttf");
+}
+
+h1, h2, h3, h4, h5, h6, p, .button, .cardbutton
+{
+    font-family: VT323-Regular;
+}
+
+p{
+    color: var(--text-colour);
+}
+
+h1
+{
+    color: var(--text-colour);
+    transition: transform 1600ms ease;
+}
+
+h1:hover
+{
+    transform: scale(1.4);
+}
+
+h4
+{
+    color: var(--paradise-pink);
+}
+
+.hyperlink:link {
+    color: var(--purple-navy);
+    transition: color 200ms ease;
+}
+
+.hyperlink:visited {
+    color: var(--paradise-pink);
+    transition: color 200ms ease;
+}
+
+.hyperlink:hover {
+    color: var(--palatinate-purple);
+}
+  
+  /* selected link */
+.hyperlink:active {
+    color: rgb(119, 174, 255);
+}
+  
+.top-bar-item 
+{
+    color: var(--text-colour);
+    transition: background-color 400ms ease;
+    border-radius: 1rem;
+    backdrop-filter: blur(0px);
+}
+  
+.top-bar-item:hover 
+{
+    backdrop-filter: blur(100px);
+    background-color: rgba(99, 25, 76, 0.849);
+}
+  
+.top-bar-item a {
+    color: var(--text-colour);
+}
+
+.sub-box
+{
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0px);
+}
+
+.title-container
+{
+    padding: 4rem 0;
+    color: var(--title-text-color);
+}
+
+.container{
+    color: var(--text-colour);
+}
+
+.button
+{
+    background-color: var(--dark-purple);
+    color: var(--text-colour);
+    transition: background-color 400ms ease;
+}
+
+.button:hover
+{
+    background-color: var(--paradise-pink);
+}
+
+.image
+{
+    transition: transform 400ms ease;
+}
+
+.image:hover
+{
+    transform: scale(1.1);
+}
+
+.card
+{
+    border-radius: 1rem;
+    background-color: var(--dark-purple);
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.877);
+    transition: transform 200ms ease;
+}
+
+.card:hover
+{
+    transform: scale(1.1);
+    transition: transform 800ms ease;
+}
+
+.cardtitleheader
+{
+    color: var(--text-colour);
+}
+
+.carddescriptor
+{
+    color: var(--text-colour);
+}
+
+.cardbutton
+{
+    color: var(--palatinate-purple);
+    transition: color 800ms ease;
+}
+
+.cardbutton:hover
+{
+    color: var(--text-colour);
+    transition: color 400ms ease;
+}

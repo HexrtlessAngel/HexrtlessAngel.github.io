@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+    <title>/home/heartlessangel</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen"/>
+
+    <body>
+      
+        <div class="box">
+
+            <div class="sub-box">
+                
+                <div class="title-container">
+                    <h1 style="text-align: center;">Discord install/uninstall script for linux...</h1>
+                </div>
+                <ul class="top-bar">
+                    <li class="top-bar-item"><p style="font-size: 20px;"><a href="/">Home</a></p></li>
+                    <li class="top-bar-item"><p style="font-size: 20px;"><a href="/blogs">Blogs</a></p></li>
+                    <li class="top-bar-item"><p style="font-size: 20px;"><a href="/downloads">Downloads</a></p></li>
+                    <li class="top-bar-item"><p style="font-size: 20px;"><a href="https://www.youtube.com/channel/UCGZ7rrzKtRT6C33l-NCclJQ">My youtube</a></p></li>
+                    <li class="top-bar-item"><p style="font-size: 20px;"><a href="https://twitter.com/hexrtlessangel">My twitter</a></p></li>
+                    <li class="top-bar-item"><p style="font-size: 20px;"><a href="https://www.instagram.com/hexrtlessangel/">My instagram</a></p></li>
+                    <li class="top-bar-item"><p style="font-size: 20px;"><a href="https://www.reddit.com/user/HexrtlessAngel">My reddit</a></p></li>
+                    <li class="top-bar-item"><p style="font-size: 20px;"><a href="https://discord.gg/WpVpZaxZ2Q">Join The Nerds discord server!</a></p></li>
+                </ul>
+
+                <div class="container">
+                    <h4>Install script...</h4>
+                    <p>
+                        This script downloads the latest .tar.gz file from discord's main site and automaticly installs it to your PC (This script is good for installing discord on any non-debian distro, such as Arch Linux for example,
+                        the arch repo is kinda notorius for not adding the latest discord version immediately everytime the client gets an update so I wrte this script to make it easier to install, simply just run the script every time
+                        a new discord client update is available! (It can be used as a temporary or permanent solution, you'll just need to run the script every time there is an update)
+                    </p>
+                    <div class="codeblock">
+                        <code>#!/bin/bash
+sudo echo "Hello! :D"
+echo "Killing any currently running discord instance."
+killall discord
+killall Discord
+echo "Downloading latest Discord tar.gz..."
+wget -O discord.tar.gz "https://discord.com/api/download?platform=linux&format=tar.gz"
+tar xf discord.tar.gz
+rm discord.tar.gz
+sudo echo "Installing Discord..."
+sudo rm -rf /usr/share/discord
+sudo cp -r Discord/ /usr/share/discord
+echo "Discord adding shortcuts..."
+sudo cp discord/discord.desktop /usr/share/applications/discord.desktop
+cp discord/discord.desktop ~/.local/share/applications/discord.desktop
+cp Discord/discord.desktop "~/Desktop/discord.desktop"
+sudo rm /usr/bin/discord
+echo "Discord adding terminal commands..."
+sudo ln -sf /usr/share/discord/Discord /usr/bin/discord
+echo "Discord installed!"
+echo "Cleaning up some shit..."
+rm -rf Discord
+discord & disown</code>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <h4>Uninstall script...</h4>
+                    <p>
+                        Use this script to remove discord from your system.
+                    </p>
+                    <div class="codeblock">
+                        <code>#!/bin/bash
+sudo echo "D:"
+echo "Killing any currently running discord instance."
+killall discord
+killall Discord
+echo "Uninstalling discord"
+sudo rm -rf /usr/share/discord
+sudo rm /usr/share/applications/discordnative.desktop
+rm "~/Desktop/discord.desktop"
+rm "~/.local/share/applications/discord.desktop"
+sudo rm /usr/bin/discord
+echo "Discord uninstalled successfully, sorry to see you go."</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

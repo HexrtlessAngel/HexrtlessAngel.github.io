@@ -1,0 +1,22 @@
+:root
+{
+    --title-text-color: #fff;
+    --primary-background-color: #000000d3;
+    --primary-button-color: #0c396b;
+    --hilighted-button-color: #702e66;
+    --text-color: #ffffff;
+    --primary-hyperlink-color: #215b92;
+    --hilighted-hyperlink-color: #4084ab;
+    --visited-hyperlink-color: #702e66;
+    --blur-amount: 5px;
+    --logo-image-dark: 0;
+}
+
+body{
+    background-image: url("background.jpg");
+}
+
+.card
+{
+    background-image: url("card-background.jpg");
+}

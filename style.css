@@ -1,0 +1,293 @@
+/* 
+    It's not fucking gorgeous but it works, lol
+    NGL css is pretty easy, hardest part about it is deciding how you want the html doc to look lol
+*/:root
+{
+    --russian-violet: #2A0C38ff;
+    --paradise-pink: rgb(255, 0, 255);
+    --dark-purple: #1D0425ff;
+    --purple-navy: #464F89ff;
+    --palatinate-purple: rgb(122, 0, 122);
+    --russian-violet-2: #312148ff;
+    --logo-image-dark: 0;
+    --text-colour: rgb(255, 0, 255);
+}
+
+body{
+    background-color: rgb(3, 3, 3);  content: " ";
+}
+
+@font-face
+{
+    font-family: VT323-Regular;
+    src: url("VT323-Regular.ttf");
+}
+
+h1, h2, h3, h4, h5, h6, p, .button, .cardbutton
+{
+    font-family: VT323-Regular;
+}
+
+p{
+    color: var(--text-colour);
+}
+
+h1
+{
+    color: var(--text-colour);
+    transition: transform 1600ms ease;
+}
+
+h4
+{
+    color: var(--paradise-pink);
+}
+
+.hyperlink:link {
+    color: var(--purple-navy);
+    transition: color 200ms ease;
+}
+
+.hyperlink:visited {
+    color: var(--paradise-pink);
+    transition: color 200ms ease;
+}
+
+.hyperlink:hover {
+    color: var(--palatinate-purple);
+}
+  
+  /* selected link */
+.hyperlink:active {
+    color: rgb(119, 174, 255);
+}
+
+.image
+{
+    transition: transform 400ms ease;
+}
+
+.image:hover
+{
+    transform: scale(1.1);
+}
+html
+{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+body{
+    background-image: url('image.gif');
+    background-size: cover;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    width: 100%;
+    bottom: auto;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+}
+
+h1
+{
+    font-size: 50px;
+}
+
+h2
+{
+    font-size: 45px;
+}
+
+h3
+{
+    font-size: 40px;
+}
+h4
+{
+    font-size: 35px;
+}
+
+h5
+{
+    font-size: 20px;
+}
+
+h6
+{
+    font-size: 25px;
+}
+        
+p{
+    font-size: 18px;  
+}
+
+code
+{
+    display:block;
+    white-space: pre-wrap;
+    color: rgb(255, 255, 255);
+}
+
+.codeblock
+{
+    background-color: var(--russian-violet);
+    padding: 2rem;   
+    border-radius: 1rem; 
+}
+
+.top-bar
+{
+    display:block;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+  
+.top-bar-item 
+{
+    color: var(--text-colour);
+    transition: background-color 400ms ease;
+    border-radius: 1rem;
+    backdrop-filter: blur(0px);
+    display: inline-block;
+}
+  
+.top-bar-item a {
+    color: var(--text-colour);
+    display: block;
+    text-align: center;
+    padding: 0px 20px;
+    text-decoration: none;
+}
+  
+.top-bar-item:hover 
+{
+    backdrop-filter: blur(100px);
+    background-color: rgba(99, 25, 76, 0.849);
+}
+
+.box{
+    padding: 5% 10%;
+}
+
+.sub-box
+{
+    background-color: rgba(30, 0, 30, 0.582);
+    backdrop-filter: blur(5px);   
+    border-radius: 1rem;
+    padding: 3rem;
+}
+
+.title-container
+{
+    padding: 4rem 0;
+    color: var(--title-text-color);
+    overflow: hidden;
+}
+
+.container{
+    color: var(--text-colour);
+    padding: 20px;
+}
+
+.button
+{
+    padding: 15px 25px;
+    border-radius: 0.5rem;
+    font-size: 20px;  
+    text-decoration: none;
+    background-color: var(--dark-purple);
+    color: var(--text-colour);
+    transition: background-color 400ms ease;
+}
+
+.button:hover
+{
+    background-color: var(--paradise-pink);
+}
+
+.cardcontainer
+{
+    display: inline-flex;
+    padding: 0.5rem;
+}
+
+.card
+{
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.877);
+    transition: transform 200ms ease;
+    background-color: var(--dark-purple);
+    /* background-color: rgb(66, 66, 66); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0.2rem;
+    width: 30ch;
+}
+
+.card:hover
+{
+    transform: scale(1.1);
+    transition: transform 800ms ease;
+}
+
+.cardtitleheader
+{
+    color: var(--text-colour);
+    position: relative;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.carddescriptor
+{
+    color: var(--text-colour);
+    font-size: 18px;
+    padding: 1rem;
+}
+
+.cardbutton
+{
+    margin: 1rem;
+    padding: 10px 25px;
+    border-radius: 0.5rem;
+    font-size: 18px;  
+    text-decoration: none;
+    color: var(--palatinate-purple);
+    transition: color 800ms ease;
+}
+
+.cardbutton:hover
+{
+    color: var(--text-colour);
+    transition: color 400ms ease;
+}
+
+.cardgrid
+{  
+    list-style-type: none;
+}
+
+.pfp
+{
+    border-radius: 100%;
+    transition: transform 200ms ease;
+    padding: 0.2rem;
+}
+
+.pfp:hover
+{
+    transform: scale(1.1);
+    transition: transform 800ms ease;
+}
